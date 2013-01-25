@@ -8,7 +8,7 @@ end
 
 execute "tar" do
   cwd "/opt"
-  command "tar xzf /tmp/#{source_tarball}"
+  command "tar xzf /tmp/#{node['openfire']['tarball']}"
   creates "/opt/openfire"
 end
 
