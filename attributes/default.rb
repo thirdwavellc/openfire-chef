@@ -1,0 +1,1 @@
+default['openfire']['tarball'] = "openfire_3_7_1.tar.gz"

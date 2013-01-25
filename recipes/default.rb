@@ -1,9 +1,7 @@
 include_recipe "java::default"
 
-source_tarball = "openfire_3_7_1.tar.gz"
-
 remote_file "/tmp/#{source_tarball}" do
-  source "http://www.igniterealtime.org/downloadServlet?filename=openfire/#{source_tarball}"
+  source "http://www.igniterealtime.org/downloadServlet?filename=openfire/#{node['openfire']['tarball']}"
   mode "0644"
   # check the checksum
 end
